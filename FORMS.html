@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PES Students Re-evaluation Request</title>
+        <link rel="stylesheet" href="cssass.css">
+        <style>
+            table, th, td {
+                border: 1px solid #ddd;
+                
+            }
+            th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        p{
+            text-align: center;
+            font: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <header class="head" >
+        
+        <img  src="https://th.bing.com/th/id/OIP.jfpFwrFVqDrbHIi17Je0TQHaHa?pid=ImgDet&rs=1" width="50" class="center">
+       
+    
+    </header>
+    <body class="bd">
+        <div class="cont">
+            <h2 class="h">PES Students Re-evaluation Request</h2>
+            <p>Please fill out the following form to request re-evaluation:</p>
+            
+            <form id="myForm">
+                <table class="table">
+                    <caption><h2>STUDENT DETAILS</h2></caption>
+                    <tr>
+                        <th>Name:</th>
+                        <td><input name="Name" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <th>SRN:</th>
+                        <td><input name="SRN" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <th>Mobile No.:</th>
+                        <td><input name="number" type="tel" required></td>
+                    </tr>
+                    <tr>
+                        <th>Email:</th>
+                        <td><input name="email" type="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="subjects">SUBJECTS:</label></th>
+                        <td>
+                            <select name="subjects" id="subjects" multiple>
+                                <option value="WT">WT</option>
+                                <option value="SDCA">SDCA</option>
+                                <option value="DSA">DSA</option>
+                                <option value="AFLL">AFLL</option>
+                                <option value="SDS">SDS</option>
+                        
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date of Request:</th>
+                        <td><input type="date" name="request_date" required></td>
+                    </tr>
+                    </table>
+                    <div>
+                    <label for="other_details" class="other">Other details:</label>
+                    <textarea name="other_details" id="other_details" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="checkbox-label">
+                        <input type="checkbox" name="details_confirmation" required>
+                        I confirm that all the details provided above are accurate and complete.
+                    </div>
+                    <tr>
+                    <td><p>
+                        <input  type="submit" class="btn" value="Submit" >
+                        <input type="reset" class="btn" value="Reset Form">
+                    </p></td>
+                    </tr>
+                    
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2023 PES University</p>
+        </footer>
+        <script src="java.js"></script>
+    </body>    
+</html>
